@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+    <listener class-name="utilities1.TestNgListeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="chrome test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests1.ManageBookingPageTest">
+                <methods>
+                    <include name="TestBookmaking"/>
+                </methods>
+            </class>
+            <class name="tests1.CheckInPageTest">
+                <methods>
+                    <include name="testCheckInPage"/>
+                </methods>
+            </class>
+            <class name="tests1.CreateAccountPageTest">
+                <methods>
+                    <include name="CreateAcc"/>
+                </methods>
+            </class>
+            <class name="tests1.FlightStatusPageTest">
+                <methods>
+                    <include name="testFlightPage"/>
+                </methods>
+            </class>
+            <class name="tests1.FlightTripTest">
+                <methods>
+                    <include name="toFlightTrip"/>
+                    <include name="toFlightTrip1"/>
+                    <include name="validatingOneWayAndRoundWay"/>
+                </methods>
+            </class>
+            <class name="tests1.LoginPageTest">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+            <class name="tests1.ManageBookingPageTest">
+                <methods>
+                    <include name="testManageBooking"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="firefox test">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests1.ManageBookingPageTest">
+                <methods>
+                    <include name="TestBookimgpage"/>
+                </methods>
+            </class>
+            <class name="tests1.CheckInPageTest">
+                <methods>
+                    <include name="testCheckInPage"/>
+                </methods>
+            </class>
+            <class name="tests1.CreateAccountPageTest">
+                <methods>
+                    <include name="CreateAcc"/>
+                </methods>
+            </class>
+            <class name="tests1.FlightStatusPageTest">
+                <methods>
+                    <include name="testFlightPage"/>
+                </methods>
+            </class>
+            <class name="tests1.FlightTripTest">
+                <methods>
+                    <include name="toFlightTrip"/>
+                    <include name="toFlightTrip1"/>
+                    <include name="validatingOneWayAndRoundWay"/>
+                </methods>
+            </class>
+            <class name="tests1.LoginPageTest">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+            <class name="tests1.ManageBookingPageTest">
+                <methods>
+                    <include name="testManageBooking"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
